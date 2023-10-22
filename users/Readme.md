@@ -2,13 +2,13 @@ Add a New User: Use the useradd command to create a new user named "hagrid".
 
 Añadir un nuevo usuario: Utilice el comando useradd para crear un nuevo usuario llamado "hagrid".
 
-sudo useradd -m hagrid
+    sudo useradd -m hagrid
 
 Set a Password: To set or change the password for the newly created user, use the 'passwd' command.
 
 Establecer una contraseña: Para establecer o cambiar la contraseña del usuario recién creado, utilice el comando 'passwd'.
 
-sudo passwd hagrid
+    sudo passwd hagrid
 
 You'll be prompted to enter a new password for "hagrid".
 
@@ -18,24 +18,24 @@ Add User to the sudo Group: To grant "hagrid" sudo privileges, you can add them 
 
 Añade el usuario al grupo sudo: Para conceder a "hagrid" privilegios sudo, puedes añadirlo al grupo "wheel", que suele estar configurado para permitir a sus miembros ejecutar cualquier comando. Puede utilizar el comando gpasswd o usermod para añadir el usuario al grupo "wheel".
 
-sudo usermod -aG wheel hagrid
+    sudo usermod -aG wheel hagrid
 
 Configure sudo: Make sure that the "wheel" group is allowed to use 'sudo'. Edit the sudoers file using the 'visudo' command:
 
 Configurar sudo: Asegúrate de que el grupo "wheel" tiene permiso para utilizar 'sudo'. Edita el archivo sudoers usando el comando 'visudo':
 
-sudo visudo
+    sudo visudo
 
 Look for a line like this and uncomment it (remove the '#' at the beginning):
 
 Busca una línea como esta y descoméntala (quita el '#' del principio):
 
-# %wheel ALL=(ALL) ALL
+    # %wheel ALL=(ALL) ALL
 
 to
 en
 
-%wheel ALL=(ALL) ALL
+    %wheel ALL=(ALL) ALL
 
 Save and exit the editor.
 
