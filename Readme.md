@@ -1,4 +1,5 @@
 Open bash, got to the directory you want to create the Dockerfile and
+
 Abre bash, ve al directorio donde quieres crear el Dockerfile y
 
 ```bash
@@ -6,6 +7,7 @@ nano Dockerfile
 ```
 
 Here is the content of the Dockerfile
+
 Este es el contenido del Dockerfile
 
 ```Dockerfile
@@ -36,6 +38,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 ```
 
 Build it
+
 Constrúyelo
 
 ```bash
@@ -43,6 +46,7 @@ Constrúyelo
 ```
 
 Run it
+
 Arráncalo
 
 ```bash
@@ -50,6 +54,7 @@ docker run --name arch_container -p 2222:22 -v $(pwd):/mydata -d my_arch_machine
 ```
 
 Enter with your bash
+
 Entro con tu bash
 
 ```bash
