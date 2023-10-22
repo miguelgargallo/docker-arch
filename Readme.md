@@ -64,3 +64,8 @@ ssh root@localhost -p 2222
 ```bash
 (password input) root
 ```
+
+The rest of the guide is purely use Arch
+El resto de la guía es como usar Arch
+
+[Guía definitiva Arch Linux](https://github.com/miguelgargallo/Guia-Definitiva-Arch-Linux)
