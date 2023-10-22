@@ -42,7 +42,7 @@ Build it
 Constrúyelo
 
 ```bash
-    docker build -t my_arch_machine .
+docker build -t my_arch_machine .
 ```
 
 Run it
